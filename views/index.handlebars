@@ -1,9 +1,17 @@
+<div class="row">
+    <div class="col">
 <div class="header-container">
-    <img id="hamburger-image" src="../public/assets/img/burger.jpg" alt="Burger image.">
+    <img id="hamburger-image" src="assets/img/burger.png" alt="Burger image.">
     <header>Eat-Da-Burger!</header>
 </div>
+</div>
+</div>
 
+<div class="row">
+    <div class="col">
 <div class="main-container">
+    <div class="row">
+    <div class="col-lg-6">
     <section id="available-hamburgers">
         <ul id="burger-list">
             {{#each burgers}}
@@ -24,6 +32,8 @@
             {{/each}}
         </ul>
     </section>
+    </div>
+    <div class="col-lg-6">
     <section id="devoured-hamburgers">
         <ul>
             {{#each burgers}}
@@ -36,6 +46,8 @@
             {{/each}}
         </ul>
     </section>
+    </div>
+    </div>
     <section id="new-burger">
         <form class="create-update-form" action="/" method="POST">
 
@@ -43,10 +55,12 @@
                 <textarea id="new-burger-text" rows="4" name="burger_name"></textarea>
             </div>
 
-            <button type="submit" id="new-burger-submit">Submit</button>
+            <button type="submit" id="new-burger-submit" class="btn btn-link">Submit</button>
         </form>
 
-        <p>Enter a burger you want to eat. Click the "Submit" button.</p>
+        <p>Type a burger you want to eat. Click the "Submit" button.</p>
 
     </section>
+    </div>
+</div>
 </div>

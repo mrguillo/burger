@@ -1,4 +1,4 @@
-html {
+body {
 	background-color: #F5D769 ;
 	font-family: monospace;
 }
@@ -17,10 +17,10 @@ p {
 	text-align: center;
 }
 
-section {
+/* section {
 	float: left;
 	width: 50%;
-}
+} */
 
 span {
 	float: left;
