@@ -34,6 +34,7 @@ var orm = {
             if (err) {
                 cb(err)
             }
+            console.log(result);
             cb(null, result);
         });
     },

@@ -8,6 +8,8 @@ var burger = require("../models/burger.js");
 // Get all burgers in burger database and render on page.
 router.get("/", function(req, res) {
   burger.selectAll(function(err, data) {
+    console.log(data);
+    console.log(err);
     if (err) res.send(err.message);
     var hbsObject = {
       burgers: data
